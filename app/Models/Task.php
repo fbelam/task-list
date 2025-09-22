@@ -10,6 +10,8 @@ class Task extends Model
 {
     use Hasfactory;
 
+    protected $table = 'task'; // Adicione esta linha!
+
     protected $fillable = [
         'description',
         'is_completed',

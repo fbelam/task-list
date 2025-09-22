@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\TaskModelo;
+use App\Models\Task;
 use Illuminate\Http\Request;
 
 class TaskController extends Controller
@@ -15,7 +15,7 @@ class TaskController extends Controller
 
     public function index()
     {
-        $taskCompleto = TaskModelo::all();
+        $taskCompleto = Task::all();
 
         return view('Tasks.index', compact('taskCompleto'));
     }
