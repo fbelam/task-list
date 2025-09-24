@@ -13,7 +13,10 @@ class Task extends Model
     protected $table = 'task'; // Adicione esta linha!
 
     protected $fillable = [
+        'tecnico',
         'description',
+        'valor',
+        'data',
         'is_completed',
     ];
 }

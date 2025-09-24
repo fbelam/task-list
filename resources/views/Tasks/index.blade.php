@@ -11,7 +11,10 @@
     <ul>
         @foreach ($taskCompleto as $task)
         <li>
-            {{ $task->description}}
+            {{ $task->tecnico}},
+            {{ $task->description}},
+            {{ $task->valor}},
+            {{ $task->data}}
         </li>
         @endforeach
     </ul>

@@ -13,7 +13,10 @@ return new class extends Migration
     {
         Schema::create('task', function (Blueprint $table) {
             $table->id();
+            $table->string('tecnico');
             $table->string('description');
+            $table->decimal('valor', 8,2);
+            $table->date('data');
             $table->boolean('is_completed')->default(false);
             $table->timestamps();
         });
